@@ -1,15 +1,46 @@
 name: option
-description: A starting point for Dart libraries or applications.
+description: Option is a type-safe way to handle nullable values without using null.
 version: 1.0.0
-# repository: https://github.com/my_org/my_repo
+repository: https://github.com/p4-k4/dart-package-option
+homepage: https://github.com/p4-k4/dart-package-option
+documentation: https://github.com/p4-k4/dart-package-option/blob/main/README.md
+issue_tracker: https://github.com/p4-k4/dart-package-option/issues
 
 environment:
-  sdk: ^3.6.0-326.0.dev
+  sdk: ^3.24.4
 
-# Add regular dependencies here.
 dependencies:
-  # path: ^1.8.0
+  meta: ^1.11.0  # For @sealed annotation and other metadata
 
 dev_dependencies:
   lints: ^5.0.0
   test: ^1.24.0
+  dart_code_metrics: ^5.7.6  # For additional static analysis
+  coverage: ^1.7.2  # For test coverage reports
+
+# Tooling configurations
+topics:
+  - functional
+  - maybe
+  - option
+  - result
+  - sealed
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+# Publish configuration
+publish_to: https://pub.dev
+
+# Additional metadata for pub.dev
+funding:
+  - https://github.com/sponsors/p4-k4
+
+screenshots:
+  - description: 'Example usage of Option type'
+    path: doc/assets/example.png
